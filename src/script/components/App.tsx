@@ -1,3 +1,3 @@
 import * as React from 'react';
-
-export const App: React.FC = () => <h1>Hello World █</h1>
+import { Board } from './Board'
+export const App: React.FC = () => <Board />
