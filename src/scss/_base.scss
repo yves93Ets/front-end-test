@@ -1,9 +1,81 @@
 body {
     font-family: monospace;
-    background: black;
-    color: white;
     -webkit-font-smoothing: antialiased;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .container{
+        display: flex;
+        background: white;
+
+        .header {
+            flex: 1 1 auto; 
+
+            .img-container {
+                background: rgb(245,245,245);
+                margin: 10px;
+                flex: 1 0 auto;
+
+                .img {
+                    margin: auto;
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                    flex-basis: 40%; 
+                    display: block;
+                }
+            }
+
+            .models-container {
+                background: white;
+                flex: 1 1 auto; 
+                
+                .models-col {
+                    background: rgb(228,228,228);
+                    height: 20px;
+                    margin: 10px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .grid {
+            flex: 2; 
+            margin: 10px 0;
+
+            .years-container {
+                display: flex;
+                flex: 2;
+                height: 50%;
+                margin-bottom: 6px;
+
+                .years-col {
+                    height: 100%;
+                    width: 30px;
+                    margin: 0 5px;
+                    background: rgb(245,245,245);
+                    align-self: flex-end;
+
+                    span {
+                        transform: rotate(-90deg);
+                        position: absolute;
+                        top: 265px;
+                    }
+                }
+            }
+                
+            .vehicule-coverage {
+                display: flex;
+                cursor: pointer;
+
+                div {
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    background: rgb(228,228,228);
+                }
+
+                .coverage {
+                    background: rgb(0 112 189); 
+                }
+            }
+        }
+    }
 }
