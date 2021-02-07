@@ -21,7 +21,8 @@ export const GridSquare: React.FC<Props> = ({ vehiculeCoverageYears, years }) =>
                         <div
                             onClick={() => handleClick(year)}
                             key={year}
-                            className={coverageYear.includes(year) ? "coverage" : "not-coverage"}>
+                            className={coverageYear.includes(year) ? "coverage" : "not-coverage"}
+                        >
                         </div>
                     )
                 })
