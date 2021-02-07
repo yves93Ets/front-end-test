@@ -1,0 +1,77 @@
+$white: white;
+$cream: rgb(245,245,245);
+$blue: rgb(0 112 189);
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    background: $white;
+    grid-gap: 5px;
+    
+    .img-container {
+        background: $cream;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        .img {
+            margin: auto;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            flex-basis: 40%; 
+            display: block;
+        }
+    }
+
+    .models-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        
+        .models-col {
+            height: 20px;
+            padding: 5px 0 5px 5px;
+            margin: 5px 0;
+            background: $cream;
+        }
+    }
+
+    .years-container {
+        display: flex;
+
+        .years-col {
+            background: $cream;
+            width: 30px;
+            height: 100%;
+            margin: 0 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            span {
+                transform: rotate(-90deg);
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+        
+    .vehicule-coverage-container {
+        .vehicule-coverage{
+            cursor: pointer;
+            display: flex;
+            
+            div {
+                flex-basis: 30px; 
+                height: 30px; 
+                margin: 5px;
+                background: $cream
+            }
+
+            .coverage {
+                background: $blue; 
+            }
+        }
+    }
+}
