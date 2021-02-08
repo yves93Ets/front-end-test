@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Header } from './Header'
-import { Grid } from './Grid'
-import data from '../../data/coverage.json'
+import { Header, Grid } from './'
+import data from '../../../data/coverage.json'
 
 export const Board: React.FC = () => {
     return (

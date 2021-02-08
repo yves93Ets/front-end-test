@@ -13,6 +13,7 @@ export const GridSquare: React.FC<Props> = ({ vehiculeCoverageYears, years }) =>
             : [year, ...coverageYear]
         setCoverageYear(newcoverageYear)
     }
+
     return (
         <div className="vehicule-coverage">
             {

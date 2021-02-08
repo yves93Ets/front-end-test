@@ -1,3 +1,3 @@
 import * as React from 'react';
-import { Board } from './Board'
+import { Board } from './Grid'
 export const App: React.FC = () => <Board />
